@@ -4,7 +4,7 @@ IM
 [技术博客](https://blog.csdn.net/qq_41906009/article/details/102670659)
 
 环境依赖
-CentOS(64 位)、C/C++、vim、g++、make/makefile
+* CentOS(64 位)、C/C++、vim、g++、make/makefile
 
 软件简介
 1. 使用开源websocket框架mongoose编写网页版本的群聊即时通信工具 
@@ -19,7 +19,7 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
  ``` mkdir IM ```
 
 2. 接入mongoose框架头文件
- ####### cp 你下载的mongoose SDK路径/mongoose . -rf 
+ * cp 你下载的mongoose SDK路径/mongoose . -rf 
 
 3. 后期接入mysql要使用
 ``` mkdir mysql_lib ```
