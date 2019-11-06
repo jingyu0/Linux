@@ -24,7 +24,7 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
 4. 构建IM项目框架
 ####### ls IM  mongoose  mysql_lib
 
-<br>
+
 #######目录结构描述
 ###### IM
 ├── Readme.md                   // help
@@ -36,7 +36,7 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
 └── web                         //前端模板下载
  
 
-<br>
+
 #######C++编写mongoose基本框架
 * 首先，设计基本框架
 * 然后，先完成基本的聊天逻辑
