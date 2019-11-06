@@ -14,23 +14,23 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
 部署步骤
 
 1. 安装websocket框架mongoose 
-####### mkdir IM 
-####### cd IM 
-####### mkdir IM
+ ``` mkdir IM ```
+ ``` cd IM ```
+ ``` mkdir IM ```
 
 2. 接入mongoose框架头文件
-####### cp 你下载的mongoose SDK路径/mongoose . -rf 
+ ####### cp 你下载的mongoose SDK路径/mongoose . -rf 
 
 3. 后期接入mysql要使用
-####### mkdir mysql_lib 
+``` mkdir mysql_lib ```
 
 4. 构建IM项目框架
-####### ls IM  mongoose  mysql_lib
+```ls IM   mongoose  mysql_lib```
 
-
+<br>
 目录结构描述
 
-###### IM
+##### IM
 ├── Readme.md                   // help
 ├── build.sh 
 ├── IM_Server.hpp               //核心代码
@@ -39,8 +39,9 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
 ├── Util.hpp                    //工具类
 └── web                         //前端模板下载
  
-
+<br>
 C++编写mongoose基本框架
+
 * 首先，设计基本框架
 * 然后，先完成基本的聊天逻辑
 * 在能够让我们访问数据库，访问我们之前所建立的表
