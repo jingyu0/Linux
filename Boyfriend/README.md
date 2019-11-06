@@ -50,10 +50,10 @@ IM
  * ``` # arecord -t wav -c 1 -r 16000 -d 5 -f S16_LE demo.wav ```
  * 安装第三方工具vlc/cvlc实现MP3文件播放
 
-
+<br>
 目录结构描述
 
-###### 智能语音对话AI
+##### 智能语音对话AI
 
 ├── Readme.md                 // help
 ├── build.sh                       //构建项目的shell脚本，简单实现
@@ -64,7 +64,7 @@ IM
 ├── speech                    　//百度语音识别SDK 
 └── temp_file                    //保存临时语音文件目录
  
-
+<br>
 难点说明
 * 使用jsoncpp  序列化与反序列化
 插入链接：
