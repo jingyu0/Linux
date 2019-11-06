@@ -1,14 +1,14 @@
 IM
 ===========================
 
-#######环境依赖
+######环境依赖
 CentOS(64 位)、C/C++、vim、g++、make/makefile
-#######软件简介
+######软件简介
 1. 使用开源websocket框架mongoose编写网页版本的群聊即时通信工具 
 
 2. 使用http+mongoose+session+mysql+jsoncpp的技术构成，完成IM工具 
 ***
-#######部署步骤
+######部署步骤
 
 1. 安装websocket框架mongoose 
 ####### mkdir IM 
@@ -25,7 +25,7 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
 ####### ls IM  mongoose  mysql_lib
 
 
-#######目录结构描述
+######目录结构描述
 ###### IM
 ├── Readme.md                   // help
 ├── build.sh 
@@ -37,7 +37,7 @@ CentOS(64 位)、C/C++、vim、g++、make/makefile
  
 
 
-#######C++编写mongoose基本框架
+######C++编写mongoose基本框架
 * 首先，设计基本框架
 * 然后，先完成基本的聊天逻辑
 * 在能够让我们访问数据库，访问我们之前所建立的表
