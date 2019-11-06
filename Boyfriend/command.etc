@@ -1,0 +1,7 @@
+查看当前目录:ls -l
+关闭防火墙:systemctl stop firewalld
+打开防火墙:systemctl start firewalld
+跑火车:sl
+黑客帝国:cmatrix -B -C blue
+查看黑名单:cat black_name.txt
+你给我闺蜜唱首歌:aplay 李森茂_-_生日快乐歌（吉他改编版）.wav
