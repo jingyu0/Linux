@@ -56,14 +56,19 @@
 ##### 智能语音对话AI
 
 ├── Readme.md                 // help
-
+<br>
 ├── build.sh                       //构建项目的shell脚本，简单实现
 <br>
 ├── command.etc              //语音命令配置文件 
+<br>
 ├── Boyfriend.cc                //AI 源文件调用
+<br>
 ├──Boyfriend.hpp 　　　　//AI 核心代码 
+<br>
 ├── Makefile                    //配置环境变量
+<br>
 ├── speech                    　//百度语音识别SDK 
+<br>
 └── temp_file                    //保存临时语音文件目录
  
 <br>
