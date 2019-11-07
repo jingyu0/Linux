@@ -1,49 +1,51 @@
 IM
 ===========================
-####²åÈëÁ´½Ó
-[¼¼Êõ²©¿Í](https://blog.csdn.net/qq_41906009/article/details/102670659)
+æ’å…¥é“¾æŽ¥
+[æŠ€æœ¯åšå®¢](https://blog.csdn.net/qq_41906009/article/details/102670659)
 
-###########»·¾³ÒÀÀµ
-CentOS(64 Î»)¡¢C/C++¡¢vim¡¢g++¡¢make/makefile
-###########Èí¼þ¼ò½é
-1. Ê¹ÓÃ¿ªÔ´websocket¿ò¼Ümongoose±àÐ´ÍøÒ³°æ±¾µÄÈºÁÄ¼´Ê±Í¨ÐÅ¹¤¾ß 
+çŽ¯å¢ƒä¾èµ–
+* CentOS(64 ä½)ã€C/C++ã€vimã€g++ã€make/makefile
 
-2. Ê¹ÓÃhttp+mongoose+session+mysql+jsoncppµÄ¼¼Êõ¹¹³É£¬Íê³ÉIM¹¤¾ß 
+è½¯ä»¶ç®€ä»‹
+1. ä½¿ç”¨å¼€æºwebsocketæ¡†æž¶mongooseç¼–å†™ç½‘é¡µç‰ˆæœ¬çš„ç¾¤èŠå³æ—¶é€šä¿¡å·¥å…· 
+
+2. ä½¿ç”¨http+mongoose+session+mysql+jsoncppçš„æŠ€æœ¯æž„æˆï¼Œå®ŒæˆIMå·¥å…· 
 ***
-###########²¿Êð²½Öè
+éƒ¨ç½²æ­¥éª¤
 
-1. °²×°websocket¿ò¼Ümongoose 
-####### mkdir IM 
-####### cd IM 
-####### mkdir IM
+1. å®‰è£…websocketæ¡†æž¶mongoose 
+ ``` mkdir IM ```
+ ``` cd IM ```
+ ``` mkdir IM ```
 
-2. ½ÓÈëmongoose¿ò¼ÜÍ·ÎÄ¼þ
-####### cp ÄãÏÂÔØµÄmongoose SDKÂ·¾¶/mongoose . -rf 
+2. æŽ¥å…¥mongooseæ¡†æž¶å¤´æ–‡ä»¶
+ * cp ä½ ä¸‹è½½çš„mongoose SDKè·¯å¾„/mongoose . -rf 
 
-3. ºóÆÚ½ÓÈëmysqlÒªÊ¹ÓÃ
-####### mkdir mysql_lib 
+3. åŽæœŸæŽ¥å…¥mysqlè¦ä½¿ç”¨
+``` mkdir mysql_lib ```
 
-4. ¹¹½¨IMÏîÄ¿¿ò¼Ü
-####### ls IM  mongoose  mysql_lib
+4. æž„å»ºIMé¡¹ç›®æ¡†æž¶
+```ls IM   mongoose  mysql_lib```
 
+<br>
+ç›®å½•ç»“æž„æè¿°
 
-###########Ä¿Â¼½á¹¹ÃèÊö
-
-###### IM
-©À©¤©¤ Readme.md                   // help
-©À©¤©¤ build.sh 
-©À©¤©¤ IM_Server.hpp               //ºËÐÄ´úÂë
-©À©¤©¤ main.cc                     //µ÷ÓÃ
-©À©¤©¤ Makefile                    //ÅäÖÃ»·¾³±äÁ¿
-©À©¤©¤ Util.hpp                    //¹¤¾ßÀà
-©¸©¤©¤ web                         //Ç°¶ËÄ£°åÏÂÔØ
+##### IM
+â”œâ”€â”€ Readme.md                   // help
+â”œâ”€â”€ build.sh 
+â”œâ”€â”€ IM_Server.hpp               //æ ¸å¿ƒä»£ç 
+â”œâ”€â”€ main.cc                     //è°ƒç”¨
+â”œâ”€â”€ Makefile                    //é…ç½®çŽ¯å¢ƒå˜é‡
+â”œâ”€â”€ Util.hpp                    //å·¥å…·ç±»
+â””â”€â”€ web                         //å‰ç«¯æ¨¡æ¿ä¸‹è½½
  
+<br>
+C++ç¼–å†™mongooseåŸºæœ¬æ¡†æž¶
 
-###########C++±àÐ´mongoose»ù±¾¿ò¼Ü
-* Ê×ÏÈ£¬Éè¼Æ»ù±¾¿ò¼Ü
-* È»ºó£¬ÏÈÍê³É»ù±¾µÄÁÄÌìÂß¼­
-* ÔÚÄÜ¹»ÈÃÎÒÃÇ·ÃÎÊÊý¾Ý¿â£¬·ÃÎÊÎÒÃÇÖ®Ç°Ëù½¨Á¢µÄ±í
-* ×îºó£¬Íê³ÉµÇÂ¼Âß¼­£¬ÕâÀï»¹ÒªÉæ¼°µ½¶ÔcookieºÍsessionµÄÀí½â£¬ÎÒÃÇÔÚ´úÂëÖÐÌåÏÖ
+* é¦–å…ˆï¼Œè®¾è®¡åŸºæœ¬æ¡†æž¶
+* ç„¶åŽï¼Œå…ˆå®ŒæˆåŸºæœ¬çš„èŠå¤©é€»è¾‘
+* åœ¨èƒ½å¤Ÿè®©æˆ‘ä»¬è®¿é—®æ•°æ®åº“ï¼Œè®¿é—®æˆ‘ä»¬ä¹‹å‰æ‰€å»ºç«‹çš„è¡¨
+* æœ€åŽï¼Œå®Œæˆç™»å½•é€»è¾‘ï¼Œè¿™é‡Œè¿˜è¦æ¶‰åŠåˆ°å¯¹cookieå’Œsessionçš„ç†è§£ï¼Œæˆ‘ä»¬åœ¨ä»£ç ä¸­ä½“çŽ°
 
 
 

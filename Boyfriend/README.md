@@ -1,75 +1,81 @@
-IM
+æ™ºèƒ½è¯­éŸ³å¯¹è¯AI 
 ===========================
-####²åÈëÁ´½Ó
-[¼¼Êõ²©¿Í](https://blog.csdn.net/qq_41906009/article/details/97384752)
+æ’å…¥é“¾æŽ¥
+[æŠ€æœ¯åšå®¢](https://blog.csdn.net/qq_41906009/article/details/97384752)
 
-######»·¾³ÒÀÀµ
-* CentOS(64 Î»)¡¢C/C++¡¢vim¡¢g++¡¢make/makefile
+çŽ¯å¢ƒä¾èµ–
+* CentOS(64 ä½)ã€C/C++ã€vimã€g++ã€make/makefile
 
-######Èí¼þ¼ò½é
-1. Ê¹ÓÃC++±àÐ´Ò»¸öÖÇÄÜAI¶Ô»°ºÍÓïÒôÃüÁîÖ´ÐÐµÄÓïÒô¹ÜÀí¹¤¾ß 
+è½¯ä»¶ç®€ä»‹
+1. ä½¿ç”¨C++ç¼–å†™ä¸€ä¸ªæ™ºèƒ½AIå¯¹è¯å’Œè¯­éŸ³å‘½ä»¤æ‰§è¡Œçš„è¯­éŸ³ç®¡ç†å·¥å…· 
 
-2. ÆäÖÐ¿ÉÖ´ÐÐÃüÁîÖ§³ÖÅäÖÃ 
+2. å…¶ä¸­å¯æ‰§è¡Œå‘½ä»¤æ”¯æŒé…ç½® 
 
 ***
-######ÏîÄ¿ÑÝÊ¾
+é¡¹ç›®æ¼”ç¤º
 
-1. ³ÌÐòÆô¶¯Ö®ºó£¬¼ÓÔØÃüÁîÅäÖÃÎÄ¼þ£¬Æô¶¯±¾µØÂ¼Òô¹¤¾ß£¬¿ªÊ¼Â¼Òô 
+1. ç¨‹åºå¯åŠ¨ä¹‹åŽï¼ŒåŠ è½½å‘½ä»¤é…ç½®æ–‡ä»¶ï¼Œå¯åŠ¨æœ¬åœ°å½•éŸ³å·¥å…·ï¼Œå¼€å§‹å½•éŸ³ 
 
-2. ³ÌÐò×¼±¸Ê¶±ð, ½«ÌØ¶¨¸ñÊ½µÄÂ¼ÒôÍÆËÍµ½°Ù¶ÈÓïÒôÊ¶±ðÆ½Ì¨½øÐÐÊ¶±ð£¬·µ»ØÊ¶±ðÍê±ÏÖ®ºóµÄÎÄ×ÖÐÅÏ¢
+2. ç¨‹åºå‡†å¤‡è¯†åˆ«, å°†ç‰¹å®šæ ¼å¼çš„å½•éŸ³æŽ¨é€åˆ°ç™¾åº¦è¯­éŸ³è¯†åˆ«å¹³å°è¿›è¡Œè¯†åˆ«ï¼Œè¿”å›žè¯†åˆ«å®Œæ¯•ä¹‹åŽçš„æ–‡å­—ä¿¡æ¯
 
-3. ¶Ô±ÈÊ¶±ðÖ®ºóµÄÊäÈëÎÄ±¾£¬±æ±ðÊÇÃüÁî»¹ÊÇÆÕÍ¨¶Ô»°ÐÅÏ¢ 
+3. å¯¹æ¯”è¯†åˆ«ä¹‹åŽçš„è¾“å…¥æ–‡æœ¬ï¼Œè¾¨åˆ«æ˜¯å‘½ä»¤è¿˜æ˜¯æ™®é€šå¯¹è¯ä¿¡æ¯ 
 
-4. Èç¹ûÊÇÃüÁî£¬½øÈëÏµÍ³ÃüÁîÖ´ÐÐÄ£¿é£¬Ö´ÐÐÍê±Ï£¬¿´µ½Ö´ÐÐ½á¹û£¬Ò»´Î½»»¥Íê³É 
+4. å¦‚æžœæ˜¯å‘½ä»¤ï¼Œè¿›å…¥ç³»ç»Ÿå‘½ä»¤æ‰§è¡Œæ¨¡å—ï¼Œæ‰§è¡Œå®Œæ¯•ï¼Œçœ‹åˆ°æ‰§è¡Œç»“æžœï¼Œä¸€æ¬¡äº¤äº’å®Œæˆ 
 
-5. Èç¹ûÊÇ¶Ô»°ÐÅÏ¢£¬ÍÆËÍ¸øÍ¼Áé»úÆ÷ÈË£¬Í¼Áé»úÆ÷ÈË»áÖÇÄÜÏàÓ¦¶Ô»°£¬µÃµ½Í¼Áé»úÆ÷ÈËÏìÓ¦µÄÎÄ±¾£¬µ÷ÓÃ°Ù¶ÈÓïÒôºÏ³É£¬ÔÚ±¾µØºÏ³ÉÓïÒô£¬È»ºó³ÌÐòÆô¶¯²¥·ÅÆ÷£¬²¥·ÅÓïÒôÐÅÏ¢£¬Íê³É¶Ô»°ÐÅÏ¢ 
-Ö§³ÖÓïÑÔÍË³ö  
+5. å¦‚æžœæ˜¯å¯¹è¯ä¿¡æ¯ï¼ŒæŽ¨é€ç»™å›¾çµæœºå™¨äººï¼Œå›¾çµæœºå™¨äººä¼šæ™ºèƒ½ç›¸åº”å¯¹è¯ï¼Œå¾—åˆ°å›¾çµæœºå™¨äººå“åº”çš„æ–‡æœ¬ï¼Œè°ƒç”¨ç™¾åº¦è¯­éŸ³åˆæˆï¼Œåœ¨æœ¬åœ°åˆæˆè¯­éŸ³ï¼Œç„¶åŽç¨‹åºå¯åŠ¨æ’­æ”¾å™¨ï¼Œæ’­æ”¾è¯­éŸ³ä¿¡æ¯ï¼Œå®Œæˆå¯¹è¯ä¿¡æ¯ 
+æ”¯æŒè¯­è¨€é€€å‡º  
 
-######×¼±¸²¿Êð¹¤×÷
-1. ×¢²áÍ¼Áé»úÆ÷ÈË
+å‡†å¤‡éƒ¨ç½²å·¥ä½œ
+1. æ³¨å†Œå›¾çµæœºå™¨äºº
 
-2. Ê¹ÓÃ°Ù¶ÈÓïÒôÊ¶±ð
+2. ä½¿ç”¨ç™¾åº¦è¯­éŸ³è¯†åˆ«
 
-3. ×¼±¸ÐèÒªµÄµÚÈý·½¿âºÍsdk 
-(ÒòºóÐø¿ª·¢ÐèÒª£¬ÐèÒªÏÈ°²×°¸ß°æ±¾cmake£¬gcc)
+3. å‡†å¤‡éœ€è¦çš„ç¬¬ä¸‰æ–¹åº“å’Œsdk <font color=#FF0000 size=4>(å› åŽç»­å¼€å‘éœ€è¦ï¼Œéœ€è¦å…ˆå®‰è£…é«˜ç‰ˆæœ¬cmakeï¼Œgcc)</font>
 
- a. ÏÂÔØ°Ù¶ÈC++ÓïÒôÊ¶±ðSDK 
+   * <font color=#FFFF00 size=4> # scl enable devtoolset-7 bash</font>
+
+ a. ä¸‹è½½ç™¾åº¦C++è¯­éŸ³è¯†åˆ«SDK 
  
-   * ``` scl enable devtoolset-6 bash```
- 
- b. °²×°jsoncpp£¬ÒªÇó£º>1.6.2°æ±¾£¬0.x°æ±¾½«²»±»Ö§³Ö
+ b. å®‰è£…jsoncppï¼Œè¦æ±‚ï¼š>1.6.2ç‰ˆæœ¬ï¼Œ0.xç‰ˆæœ¬å°†ä¸è¢«æ”¯æŒ
 
- c. °²×°openssl (opensslÇáÒ×²»ÒªÐ¶ÔØ)
+ c. å®‰è£…openssl (opensslè½»æ˜“ä¸è¦å¸è½½)
 
- d. °²×°libcurl£¨ÐèÒªÖ§³Öhttps£©
- * ÏÂÔØcurl-7.64.1.tar.gz°æ±¾
+ d. å®‰è£…libcurlï¼ˆéœ€è¦æ”¯æŒhttpsï¼‰
+ * ä¸‹è½½curl-7.64.1.tar.gzç‰ˆæœ¬
  
-4. ×¼±¸Centos 7Â¼ÒôºÍ²¥·Å¹¤¾ß 
- * Ê¹ÓÃarecord½øÐÐÂ¼Òô 
+4. å‡†å¤‡Centos 7å½•éŸ³å’Œæ’­æ”¾å·¥å…· 
+ * ä½¿ç”¨arecordè¿›è¡Œå½•éŸ³ 
  
  * ``` # arecord -t wav -c 1 -r 16000 -d 5 -f S16_LE demo.wav ```
- * °²×°µÚÈý·½¹¤¾ßvlc/cvlcÊµÏÖMP3ÎÄ¼þ²¥·Å
+ * å®‰è£…ç¬¬ä¸‰æ–¹å·¥å…·vlc/cvlcå®žçŽ°MP3æ–‡ä»¶æ’­æ”¾
 
-
-######Ä¿Â¼½á¹¹ÃèÊö
-
-###### ÖÇÄÜÓïÒô¶Ô»°AI
-
-©À©¤©¤ Readme.md                 // help
-©À©¤©¤ build.sh                       //¹¹½¨ÏîÄ¿µÄshell½Å±¾£¬¼òµ¥ÊµÏÖ
-©À©¤©¤ command.etc              //ÓïÒôÃüÁîÅäÖÃÎÄ¼þ 
-©À©¤©¤ Boyfriend.cc                //AI Ô´ÎÄ¼þµ÷ÓÃ
-©À©¤©¤Boyfriend.hpp ¡¡¡¡¡¡¡¡//AI ºËÐÄ´úÂë 
-©À©¤©¤ Makefile                    //ÅäÖÃ»·¾³±äÁ¿
-©À©¤©¤ speech                    ¡¡//°Ù¶ÈÓïÒôÊ¶±ðSDK 
-©¸©¤©¤ temp_file                    //±£´æÁÙÊ±ÓïÒôÎÄ¼þÄ¿Â¼
- 
-
-######ÄÑµãËµÃ÷
-* Ê¹ÓÃjsoncpp  ÐòÁÐ»¯Óë·´ÐòÁÐ»¯
 <br>
-²åÈëÁ´½Ó£º
-[jsoncpp¾ÙÀý](Á´½ÓÍøÖ· "https://github.com/jingyu0/Linux_project/tree/master/Boyfriend/test")
+ç›®å½•ç»“æž„æè¿°
+
+##### æ™ºèƒ½è¯­éŸ³å¯¹è¯AI
+
+â”œâ”€â”€ Readme.md                 // help
+<br>
+â”œâ”€â”€ build.sh                       //æž„å»ºé¡¹ç›®çš„shellè„šæœ¬ï¼Œç®€å•å®žçŽ°
+<br>
+â”œâ”€â”€ command.etc              //è¯­éŸ³å‘½ä»¤é…ç½®æ–‡ä»¶ 
+<br>
+â”œâ”€â”€ Boyfriend.cc                //AI æºæ–‡ä»¶è°ƒç”¨
+<br>
+â”œâ”€â”€Boyfriend.hpp ã€€ã€€ã€€ã€€//AI æ ¸å¿ƒä»£ç  
+<br>
+â”œâ”€â”€ Makefile                    //é…ç½®çŽ¯å¢ƒå˜é‡
+<br>
+â”œâ”€â”€ speech                    ã€€//ç™¾åº¦è¯­éŸ³è¯†åˆ«SDK 
+<br>
+â””â”€â”€ temp_file                    //ä¿å­˜ä¸´æ—¶è¯­éŸ³æ–‡ä»¶ç›®å½•
+ 
+<br>
+éš¾ç‚¹è¯´æ˜Ž
+
+* ä½¿ç”¨jsoncpp  åºåˆ—åŒ–ä¸Žååºåˆ—åŒ–
+æ’å…¥é“¾æŽ¥ï¼š
+[jsoncppä¸¾ä¾‹](https://github.com/jingyu0/Linux_project/tree/master/Boyfriend/test)
 
 
 
