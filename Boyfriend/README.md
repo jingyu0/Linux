@@ -30,12 +30,11 @@
 
 2. 使用百度语音识别
 
-3. 准备需要的第三方库和sdk 
-(因后续开发需要，需要先安装高版本cmake，gcc)
+3. 准备需要的第三方库和sdk <font color=#FF0000 size=4>(因后续开发需要，需要先安装高版本cmake，gcc)</font>
+
+   * <font color=#FFFF00 size=4> # scl enable devtoolset-7 bash</font>
 
  a. 下载百度C++语音识别SDK 
- 
-   * ``` scl enable devtoolset-6 bash```
  
  b. 安装jsoncpp，要求：>1.6.2版本，0.x版本将不被支持
 
