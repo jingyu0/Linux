@@ -56,7 +56,9 @@
 ##### 智能语音对话AI
 
 ├── Readme.md                 // help
+
 ├── build.sh                       //构建项目的shell脚本，简单实现
+<br>
 ├── command.etc              //语音命令配置文件 
 ├── Boyfriend.cc                //AI 源文件调用
 ├──Boyfriend.hpp 　　　　//AI 核心代码 
@@ -69,7 +71,7 @@
 
 * 使用jsoncpp  序列化与反序列化
 插入链接：
-[jsoncpp举例](链接网址 "https://github.com/jingyu0/Linux_project/tree/master/Boyfriend/test")
+[jsoncpp举例](https://github.com/jingyu0/Linux_project/tree/master/Boyfriend/test)
 
 
 
