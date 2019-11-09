@@ -77,7 +77,9 @@
 插入链接：
 [jsoncpp举例](https://github.com/jingyu0/Linux_project/tree/master/Boyfriend/test)
 
-
+运行截图
+![1.png](https://raw.githubusercontent.com/jingyu0/Linux_project/master/Boyfriend/1.PNG)
+![2.png](https://raw.githubusercontent.com/jingyu0/Linux_project/master/Boyfriend/2.PNG)
 
 
 
