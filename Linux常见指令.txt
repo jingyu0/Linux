@@ -1,0 +1,198 @@
+﻿Linux复习
+
+linux初识阶段
+    linux基本认识+基本的命令操作
+    linux下的常用工具
+linux系统编程阶段   12~14
+linux操作系统的认识以及系统下的编程
+    进程概念
+    进程控制
+    基础IO
+    进程间通信
+    进程信号
+    多线程
+linux下的网络编程阶段 12
+    网络基础1
+    网络编程
+    网络基础2
+    网络基础3
+    高级IO
+    
+linux初识+基本命令操作：
+linux的发展史： 
+multics--
+linux发行版：
+linux操作系统的组成：操作系统内核 + 外部应用
+linux发行版：定制化开发了操作系统内核，再加上自己的外部应用
+RedHat      Debian
+CentOs      Ubuntu
+
+工具
+vmware   --- 虚拟硬件环境  - 在虚拟的硬件环境中安装操作系统
+虚拟机 --- VMware中安装的操作系统
+
+VMware软件+CentOs7....ISO
+xshell软件  --- 远程客户端--用于远程操作linux服务器
+
+左上角图标-》下拉菜单右边栏-》Terminal/终端-》ifconfig
+
+ifconfig：查看当前主机上的网卡信息
+
+基础指令：
+命令的使用格式： 命令名称  [功能选项] [操作对象]
+目录相关命令
+    ls  浏览目录内容
+        -a 查看隐藏文件  linux以.开头的文件都是隐藏文件
+        -l 查看文件详细信息
+    pwd 查看当前所在路径（绝对路径）
+        linux目录结构唯一，是一个树状结构，最底层是/ 根目录
+        据对路径：起始路径是根目录的路径
+        相对路径：起始路径是当前所在目录的路径
+        . 当前所在路径
+        .. 当前所在目录的上一层路径
+        /home/san
+        ../san
+        ./
+    mkdir 创建目录
+        -p 递归创建多层级目录（哪层不存在创建哪层）
+    rmdir 删除空目录
+        -p 递归删除多层级空目录
+    rm  默认删除普通文件
+        -r 删除目录（删除目录以及目录下所有文件）
+        -f 忽略提示直接操作
+    cp  将指定文件向指定目录下拷贝一份
+        -r 拷贝目录（拷贝目录以及目录下所有文件）
+    mv  将指定文件或目录移动到指定路径下
+        -i 增加提示信息
+    cd  改变当前所在路径
+        ~   快速返回当前用户家目录
+文件相关命令
+    touch 若文件不存在则创建新的空文件，否则刷新文件时间属性
+        -d 使用指定时间刷新  'yyyy-mm-dd HH:MM:SS'
+    cat   将文件内容直接全部打印到终端显示
+    more  分页显示文件内容
+        空格向下翻页
+        回车向下按行滚动
+        q退出
+    less  分页显示文件内容
+        f/b上下翻页
+        j/k上下按行滚动
+        q退出 
+        /string 向下匹配指定字符串string
+        ?string 向上匹配指定字符串string
+    head    显示文件的前n行内容
+        head -n num file
+    tail    显示文件的末尾n行内容
+        tail -n num file
+        tail -f file 动态刷新文件末尾内容
+压缩解压缩命令：
+    zip/unzip zip格式的压缩解压缩命令
+        zip ***.zip file1 file2....
+        unzip ***.zip
+    gzip/gunzip gzip格式的压缩解压缩
+        gzip file1 file2...
+        gunzip **.gz
+    bunzip2/bzip2 bzip2格式的压缩解压缩
+        bzip2 file1 file2...
+        bunzip2 **.bz2
+    tar 对文件/目录进行打包/解包
+        -c 打包
+        -x 解包
+        -v 打包/解包的同时显示打包/解包信息
+        -z 在打包/解包的同时进行gzip格式的压缩/解压缩
+        -j 在打包/解包的同时进行bzip2格式的压缩/解压缩
+        -f 用于指定压缩包的命令（通常是最后一个选项）
+        tar -czvf test.tar.gz file1 file2 dir1 dir2
+        tar -xzvf test.tar.gz
+匹配查找命令
+    grep    在文件中匹配包含指定字符串的行
+        -i 忽略大小写进行匹配  grep -i "string" file
+        -v 匹配不包含指定字符串的行 grep -v "string" file
+        -R 递归对指定目录下的所有文件进行字符串匹配
+        grep -R "root"  ./
+    find    在指定目录下查找指定的文件
+        -name   按照文件名称查找文件
+        -size   按照文件大小查找文件
+        -type b/f/d/p/l/s/c 按照文件类型查找文件
+        -atime / -ctime / -mtime
+        -amin / -cmin / -mmin  按不同的时间查找文件
+其它命令
+    标准输出重定向
+    >>  追加重定向-每次新数据总是追加到文件末尾
+    >   清空重定向-每次回清空文件原有内容，再写入数据
+    echo "hello" >> a.txt
+    su 切换用户
+    ifconfig 查看网卡信息
+    man 查看命令手册   man ls
+    date 查看或这是系统时间
+        +%s 查看时间戳-从1970到现在秒数
+        +"%Y-%m-%d %H:%M:%S" 按照指定格式显示时间
+        -s 'yyyy-mm-dd HH:MM:SS' 按指定格式设置系统时间
+    
+    ctrl+c  中断当前操作
+    tab 自动补全
+    shutdown -h now  关机
+    reboot  重启
+    
+    打印文件的第23行
+    head -n 23 passwd | tail -n 1
+    | 管道符：连接两个命令，将前边命令的结果交给后边命令进行处理
+
+
+shell的基本认识：
+shell 
+内核+外部应用 = 操作系统 
+shell：命令行解释器--是用户于内核之间进行沟通的桥梁
+shell命令：大佬们针对常见功能对系统调用接口封装出来的功能程序比如ls程序
+
+权限：
+用户对操作系统操作权限的分类： 管理员root/普通用户
+
+文件权限：
+文件操作中用户的分类： 
+文件的所有者u      文件所属组g    其它用户o
+用户所能对文件进行的操作分类：
+可读r              可写w          可执行x 
+可浏览             可创建/删除    可进入
+
+rw- r-- r--    rwxr-xr--
+rwx rwx rwx
+111 111 111    可读可执行  可读  可执行   101 100 001
+7   7   7
+
+653 3 011
+
+rw-rw-r--
+
+权限相关操作
+umask   查看/设置文件创建权限掩码--决定了在shell中创建文件时的默认权限
+        给定权限 & 掩码取反
+        umask=022 given=777  777 & ~022 = 755
+chmod   修改文件权限
+        chmod 777 file 
+        chmod [a/u/g/o] +/- [r/w/x] file
+chown   修改文件所有者
+chgrp   修改文件所属组
+        chown username filename
+        chgrp username filename
+
+chmod +t 设置目录的沾滞位
+    沾滞位：其它用户在设置了沾滞位的目录下，能够创建文件，
+    但是，不能删除别人的文件，只能删除自己的
+    chmod +t file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
